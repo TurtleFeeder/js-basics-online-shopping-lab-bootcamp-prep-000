@@ -14,7 +14,7 @@ function addToCart(item) {
 
 
  var price = Math.floor((Math.random())*100);
- var itemObj = {[item]: price};
+ var itemObj = {itemName: item, itemPrice: price};
  
  
  cart.push(itemObj);
