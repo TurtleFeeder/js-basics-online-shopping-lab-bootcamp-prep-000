@@ -18,7 +18,7 @@ function addToCart(item) {
  
  
  cart.push(itemObj);
-return cart;
+return `${item} has been added to your cart.`;
 }
 
 addToCart('daikon');
