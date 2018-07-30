@@ -13,14 +13,11 @@ function addToCart(item) {
  // write your code here
 
 
- var price = setPrice();
- itemAdd = {itemName: [item], itemPrice: [price()]};
+ var price = Math.floor(Math.random()*100);
+ var itemObj = {[item]: price()};
  
- function setPrice(){
-   return Math.floor(Math.random()*100);
- }
  
- cart.push(itemAdd);
+ cart.push(itemObj);
 
 }
 
