@@ -13,13 +13,15 @@ function addToCart(item) {
  // write your code here
 
 
- var price = Math.floor(Math.random()*100);
+ var price = Math.floor((Math.random())*100);
  var itemObj = {[item]: price};
  
  
  cart.push(itemObj);
-
+return cart;
 }
+
+addToCart('daikon');
 
 function viewCart() {
   // write your code here
