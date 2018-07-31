@@ -26,9 +26,10 @@ function viewCart() {
   var cartView = [];
   var i = 0;
   if (cart.length>0){
-    
+  
+  // i'll need to push the cart values into a new array to combine the itemName and itemPrice.  
     while(i<cart.length){
-    cartView.push(cart[i]);
+    cartView.push(`${cart.itemName[i]} at $${cart.itemPrice[i]}`);
     i++;
     }
     
