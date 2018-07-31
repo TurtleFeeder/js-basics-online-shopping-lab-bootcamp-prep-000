@@ -23,6 +23,14 @@ addToCart('daikon');
 
 function viewCart() {
   // write your code here
+  var cartView = [];
+  var i = 0;
+  
+  while(i<cart.length){
+    cartView.push(cart[i]);
+    i++;
+  }
+  
 }
 
 function total() {
