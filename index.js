@@ -25,11 +25,17 @@ function viewCart() {
   // write your code here
   var cartView = [];
   var i = 0;
-  
-  while(i<cart.length){
+  if (cart.length>0){
+    
+    while(i<cart.length){
     cartView.push(cart[i]);
     i++;
+    }
+    
+  } else{
+    return `Your shopping cart is empty.`;
   }
+
   
 }
 
